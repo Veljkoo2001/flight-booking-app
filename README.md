@@ -5,7 +5,7 @@
 [![Django](https://img.shields.io/badge/Django-4.2-green)](https://djangoproject.com)
 [![Vercel](https://img.shields.io/badge/Vercel-Deployed-black)](https://vercel.com)
 
-> ⚠️ **Važno napomena:** Important Note: This project is currently under active development. Features are being added and modified, and the code may change without prior notice.
+> ⚠️ **Important Note:** This project is currently under active development. Features are being added and modified, and the code may change without prior notice.
 
 ## 📋 About the Project
 
