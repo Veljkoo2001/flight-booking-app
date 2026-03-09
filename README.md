@@ -1,6 +1,6 @@
 # ✈️ Flight Booking App - Flight Reservation Application
 
-[![Status: unfinished](https://img.shields.io/badge/Status-U%20izradi-yellow)](https://github.com/tvoj-username/flight-booking-app)
+[![Status: unfinished](https://img.shields.io/badge/Status-Unfinished-yellow)](https://github.com/tvoj-username/flight-booking-app)
 [![Python](https://img.shields.io/badge/Python-3.9+-blue)](https://python.org)
 [![Django](https://img.shields.io/badge/Django-4.2-green)](https://djangoproject.com)
 [![Vercel](https://img.shields.io/badge/Vercel-Deployed-black)](https://vercel.com)
