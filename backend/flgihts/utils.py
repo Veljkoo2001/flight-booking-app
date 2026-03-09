@@ -1,0 +1,102 @@
+from datetime import datetime, timedelta
+
+def get_mock_flights():
+    """Vraća mock podatke o letovima dok ne implementiramo bazu"""
+    return [
+        {
+            "id": 1,
+            "from": "Beograd",
+            "from_code": "BEG",
+            "to": "Tivat",
+            "to_code": "TIV",
+            "company": "Air Serbia",
+            "company_code": "JU",
+            "flight_number": "JU 680",
+            "departure": "2024-06-15T08:00:00",
+            "arrival": "2024-06-15T08:55:00",
+            "price": 89,
+            "luggage_included": False,
+            "flight_type": "one-way",
+            "available_seats": 12
+        },
+        {
+            "id": 2,
+            "from": "Beograd",
+            "from_code": "BEG",
+            "to": "Tivat",
+            "to_code": "TIV",
+            "company": "Air Serbia",
+            "company_code": "JU",
+            "flight_number": "JU 682",
+            "departure": "2024-06-15T16:30:00",
+            "arrival": "2024-06-15T17:25:00",
+            "price": 79,
+            "luggage_included": True,
+            "flight_type": "one-way",
+            "available_seats": 5
+        },
+        {
+            "id": 3,
+            "from": "Beograd",
+            "from_code": "BEG",
+            "to": "Tivat",
+            "to_code": "TIV",
+            "company": "Montenegro Airlines",
+            "company_code": "YM",
+            "flight_number": "YM 310",
+            "departure": "2024-06-15T11:15:00",
+            "arrival": "2024-06-15T12:10:00",
+            "price": 65,
+            "luggage_included": False,
+            "flight_type": "one-way",
+            "available_seats": 8
+        },
+        {
+            "id": 4,
+            "from": "Beograd",
+            "from_code": "BEG",
+            "to": "Podgorica",
+            "to_code": "TGD",
+            "company": "Air Serbia",
+            "company_code": "JU",
+            "flight_number": "JU 660",
+            "departure": "2024-06-15T09:30:00",
+            "arrival": "2024-06-15T10:25:00",
+            "price": 69,
+            "luggage_included": True,
+            "flight_type": "one-way",
+            "available_seats": 15
+        },
+        {
+            "id": 5,
+            "from": "Beograd",
+            "from_code": "BEG",
+            "to": "Tivat",
+            "to_code": "TIV",
+            "company": "Air Serbia",
+            "company_code": "JU",
+            "flight_number": "JU 684",
+            "departure": "2024-06-20T09:00:00",
+            "arrival": "2024-06-20T09:55:00",
+            "price": 99,
+            "luggage_included": True,
+            "flight_type": "one-way",
+            "available_seats": 20
+        },
+        {
+            "id": 6,
+            "from": "Tivat",
+            "from_code": "TIV",
+            "to": "Beograd",
+            "to_code": "BEG",
+            "company": "Air Serbia",
+            "company_code": "JU",
+            "flight_number": "JU 681",
+            "departure": "2024-06-22T14:00:00",
+            "arrival": "2024-06-22T14:55:00",
+            "price": 89,
+            "luggage_included": True,
+            "flight_type": "return",
+            "available_seats": 10
+        }
+    ]
