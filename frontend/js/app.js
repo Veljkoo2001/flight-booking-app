@@ -1,6 +1,7 @@
 // Konfiguracija
-const API_BASE_URL = 'http://localhost:5000/api'; // Promeniti kada bude na produkciji
-
+const API_BASE_URL = window.location.hostname === 'localhost' 
+    ? 'http://localhost:8000/api'
+    : 'https://your-production-api.com/api'; // Zameni sa stvarnim URL-om
 // Čekanje da DOM učita
 document.addEventListener('DOMContentLoaded', function() {
     
