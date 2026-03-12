@@ -114,3 +114,25 @@ REST_FRAMEWORK = {
         'rest_framework.parsers.JSONParser',
     ],
 }
+
+if not DEBUG:
+    # CORS settings za produkciju
+    CORS_ALLOWED_ORIGINS = [
+        "https://tvoj-frontend.vercel.app",  # Zameni sa svojim frontend URL-om
+    ]
+    
+    # Database za produkciju (ako koristiš PostgreSQL)
+    import dj_database_url
+    DATABASES = {
+        'default': dj_database_url.config(
+            default=os.getenv('DATABASE_URL'),
+            conn_max_age=600
+        )
+    }
+    
+    # Security settings
+    SECURE_SSL_REDIRECT = True
+    SESSION_COOKIE_SECURE = True
+    CSRF_COOKIE_SECURE = True
+    SECURE_BROWSER_XSS_FILTER = True
+    SECURE_CONTENT_TYPE_NOSNIFF = True
